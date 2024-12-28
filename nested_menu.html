@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested Menu</title>
+    <style>
+        nav >ul {
+            display: flex;
+        }
+        nav li{
+            list-style: none;
+            margin-right: 10px;
+        }
+        nav li a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        nav li a:hover{
+            background-color: lightgray;
+        }
+        /* nested menu style */
+        nav li .Dropdown{
+            display: none;    
+        }
+        nav li:hover .Dropdown{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="b">
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Form</a>
+                <ul class="Dropdown">
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="index.html">Index</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">Index</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
